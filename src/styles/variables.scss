@@ -1,0 +1,40 @@
+:root {
+   /* Typography */
+   --family: "Nunito Sans", sans-serif;
+   --fs-sm: 14px;
+   --fs-md: 16px;
+   --fw-light: 300;
+   --fw-normal: 600;
+   --fw-bold: 800;
+
+   /* Other */
+   --radii: 0.5rem;
+}
+
+body[data-theme="dark"] {
+   --colors-text: hsl(0, 0%, 100%);
+   --colors-bg: hsl(207, 26%, 17%);
+   --colors-ui-base: hsl(209, 23%, 22%);
+
+   --shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
+}
+body[data-theme="light"] {
+   --colors-text: hsl(200, 15%, 8%);
+   --colors-bg: hsl(0, 0%, 98%);
+   --colors-ui-base: hsl(0, 0%, 100%);
+
+   --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+$ff: var(--family);
+$fsSm: var(--fs-sm);
+$fsMd: var(--fs-md);
+$fwLight: var(--fw-light);
+$fwNormal: var(--fw-normal);
+$fwBold: var(--fw-bold);
+$brr: var(--radii);
+
+$textColor: var(--colors-text);
+$bgColor: var(--colors-bg);
+$uiColor: var(--colors-ui-base);
+$shw: var(--shadow);

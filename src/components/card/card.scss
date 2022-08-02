@@ -1,0 +1,52 @@
+@import "/src//styles//variables.scss";
+
+.card {
+   box-shadow: $shw;
+   border-radius: $brr;
+   overflow: hidden;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   cursor: pointer;
+   .img {
+      position: relative;
+      padding-bottom: 60%;
+      width: 100%;
+      box-shadow: img$shw;
+      img {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         object-fit: cover;
+      }
+   }
+
+   &__body {
+      padding: 20px;
+      padding-bottom: 35px;
+      flex: 1 1 auto;
+   }
+   &__title {
+      margin: 0;
+      margin-bottom: 20px;
+      font-weight: $fwBold;
+      font-size: $fsMd;
+   }
+   &__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+   }
+   &__li {
+      font-weight: $fwBold;
+      font-size: $fsSm;
+      span {
+         font-weight: $fwLight;
+      }
+   }
+}

@@ -1,0 +1,26 @@
+@import "/src//styles//variables.scss";
+
+.input {
+   outline: none;
+   border: none;
+   background: $uiColor;
+   height: 100%;
+   width: 100%;
+   width: 260px;
+   padding-left: 20px;
+   color: $textColor;
+   &::placeholder {
+      color: $textColor;
+      opacity: 1;
+   }
+   &__wraper {
+      padding-left: 30px;
+      height: 48px;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      background: $uiColor;
+      border-radius: $brr;
+      box-shadow: $shw;
+   }
+}

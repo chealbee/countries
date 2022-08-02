@@ -1,0 +1,28 @@
+@import "/src//styles//variables.scss";
+
+.header {
+   box-shadow: $shw;
+   padding: 2rem 0;
+   margin-bottom: 60px;
+   &__logo {
+      color: $textColor;
+      font-size: $fsSm;
+      font-weight: $fwBold;
+      text-decoration: none;
+      cursor: pointer;
+   }
+   &__wraper {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__switcher {
+      font-weight: $fwBold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      span {
+         text-transform: capitalize;
+         margin-left: 10px;
+      }
+   }
+}

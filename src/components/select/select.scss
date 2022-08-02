@@ -1,0 +1,39 @@
+@import "/src//styles//variables.scss";
+.select {
+   &__control {
+      cursor: pointer !important;
+      border: none !important;
+      background: $uiColor !important;
+      width: 200px;
+      height: 48px;
+      padding: 0 20px;
+      box-shadow: $shw !important;
+   }
+   &__value-container {
+      padding: 0 !important;
+   }
+   &__placeholder {
+      color: $textColor !important;
+   }
+   &__single-value {
+      color: $textColor !important;
+   }
+   &__indicators {
+      span {
+         display: none !important;
+      }
+   }
+   &__menu {
+      background: $uiColor !important;
+   }
+   &__option {
+      background: transparent !important;
+      cursor: pointer !important;
+      color: $textColor !important;
+      &:hover {
+         color: $textColor !important;
+         text-decoration: underline !important;
+         background: transparent !important;
+      }
+   }
+}
